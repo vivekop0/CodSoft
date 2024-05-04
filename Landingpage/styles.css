@@ -1,0 +1,125 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.main-content {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;  
+    padding: 0;
+}
+
+.navbar li {
+    margin-left: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.about div {
+    flex: 1 1 300px; 
+    padding: 10px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto; 
+}
+
+.card-content {
+    padding: 15px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.heading {
+    padding-bottom: 9px;
+    font-size: 24px; 
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: rgb(255, 204, 0);
+    border: none;
+}
+
+.btn:hover {
+    background: yellow;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar div, .navbar ul {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;  
+    }
+
+    .navbar li {
+        display: block; 
+        margin: 10px 0; 
+    }
+
+    .heading {
+        font-size: 18px; 
+    }
+}
